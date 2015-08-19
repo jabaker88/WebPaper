@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WebPaper.MainWindow"
+        Title="WebPaper" Height="200" Width="379" 
+        ResizeMode="NoResize" 
+        WindowStyle="None"
+        ShowInTaskbar="False" Closing="Window_Closing" AllowsTransparency="True" Background="{x:Null}" Deactivated="Window_Deactivated" Foreground="#FF7E7B7B" Loaded="Window_Loaded"
+        >
+    <Grid Margin="0,0,0,0" Background="#FFECECEC">
+        <Image x:Name="ExitButton" HorizontalAlignment="Left" Height="12" Margin="357,10,0,0" VerticalAlignment="Top" Width="12" Source="Resources/exit.ico" MouseLeftButtonUp="ExitButton_MouseLeftButtonUp" d:IsLocked="True"/>
+        <Image x:Name="currentImage" HorizontalAlignment="Left" Height="180" Margin="10,10,0,0" VerticalAlignment="Top" Width="252" Source="Resources/loading.bmp"/>
+        <Image x:Name="nextImage" HorizontalAlignment="Left" Height="84" Margin="267,90,0,0" VerticalAlignment="Top" Width="102" Source="Resources/loading.bmp" MouseLeftButtonUp="nextImage_MouseLeftButtonUp"/>
+        <Label Content="Next" HorizontalAlignment="Left" Margin="262,67,0,0" VerticalAlignment="Top" Width="102" Height="23" FontSize="9"/>
+        <Image x:Name="ConfigureButton" HorizontalAlignment="Left" Height="12" Margin="357,27,0,0" VerticalAlignment="Top" Width="12" Source="Resources/GearIcon.bmp" MouseLeftButtonUp="ConfigureButton_MouseLeftButtonUp" d:IsLocked="True"/>
+
+    </Grid>
+</Window>
